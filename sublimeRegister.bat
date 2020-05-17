@@ -48,7 +48,7 @@ echo -----------------------------------------------------------------------
 
 :begin
 
-Set sublimeDir=%~dp0
+Set toolDir=%~dp0
 
 Set /p u=输入操作序号并按 Enter 键：
 
@@ -77,7 +77,7 @@ If ERRORLEVEL 1 (
 
 )
 
-reg add "HKCR\*\shell\Sublime Text\command" /ve /d "\"%sublimeDir%..\sublime_text.exe\" \"%%1\"" /f
+reg add "HKCR\*\shell\Sublime Text\command" /ve /d "\"%toolDir%..\sublime_text.exe\" \"%%1\"" /f
 
 If ERRORLEVEL 1 ( 
 
@@ -123,11 +123,11 @@ If ERRORLEVEL 1 (
 
 )
 
-reg add "HKCR\sublimefile\DefaultIcon" /ve /d "%sublimeDir%..\\sublime_text.exe" /f
+reg add "HKCR\sublimefile\DefaultIcon" /ve /d "%toolDir%..\sublime_text.exe" /f
 
-reg add "HKCR\sublimefile\shell\open\command" /ve /d "\"%sublimeDir%..\\sublime_text.exe\" \"%%1\"" /f
+reg add "HKCR\sublimefile\shell\open\command" /ve /d "\"%toolDir%..\sublime_text.exe\" \"%%1\"" /f
 
-For /F "eol=;" %%e in (%sublimeDir%..\ext.txt) Do (
+For /F "eol=;" %%e in (%toolDir%ext.txt) Do (
 
         (for /f "skip=2 tokens=1,2,* delims= " %%a in ('reg query "HKCR\.%%e" /ve') do (
 
@@ -165,7 +165,7 @@ If ERRORLEVEL 1 (
 
 )
 
-For /F "eol=;" %%e in (%sublimeDir%..\ext.txt) Do (
+For /F "eol=;" %%e in (%toolDir%ext.txt) Do (
 
         (for /f "skip=2 tokens=1,2,* delims= " %%a in ('reg query "HKCR\.%%e" /v "sublime_backup"') do (
 
