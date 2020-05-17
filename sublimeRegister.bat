@@ -4,7 +4,7 @@ title Sublime Text 便携版工具包
 
 echo.
 
-echo.               Sublime Text 便携版工具包 说  明
+echo.               Sublime Text 便携版工具包 说  明 @loo2k @Auh
 
 :read
 
