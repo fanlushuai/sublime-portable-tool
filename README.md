@@ -4,11 +4,15 @@
 
 ## 使用
 
+> windows10 测试可用
+
 1. cd到sublime_text.exe所在目录 
 2. git clone https://github.com/fanlushuai/sublime-portable-tool.git
 3. cd sublime-portable-tool目录内
 4. 右键 sublimeRegister.bat ，以管理员运行
 5. 按照交互提示操作
+
+
 
 ## 注意
 
