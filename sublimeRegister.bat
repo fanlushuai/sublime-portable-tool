@@ -12,7 +12,7 @@ echo -----------------------------------------------------------------------
 
 echo   ！！！！！操作前阅读！！！！：
 
-echo   1. 请将此脚本复制到 Sublime Text 的文件夹；
+echo   1. 确保bat脚本的位置在。sublimeDir/xxx/this.bat (处于和sublime_text.exe所在目录的子目录位置)
 
 echo   2. 确保 Sublime Text 的可执行文件名为 sublime_text.exe；
 
