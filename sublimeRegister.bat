@@ -1,28 +1,28 @@
 @echo OFF
 
-title Sublime Text ä¾¿æºç‰ˆå·¥å…·åŒ…
+title Sublime Text ±ãĞ¯°æ¹¤¾ß°ü
 
 echo.
 
-echo.               Sublime Text ä¾¿æºç‰ˆå·¥å…·åŒ… è¯´  æ˜ @loo2k @Auh
+echo.               Sublime Text ±ãĞ¯°æ¹¤¾ß°ü Ëµ  Ã÷ @loo2k @Auh
 
 :read
 
 echo -----------------------------------------------------------------------
 
-echo   ï¼ï¼ï¼ï¼ï¼æ“ä½œå‰é˜…è¯»ï¼ï¼ï¼ï¼ï¼š
+echo   £¡£¡£¡£¡£¡²Ù×÷Ç°ÔÄ¶Á£¡£¡£¡£¡£º
 
-echo   1. ç¡®ä¿batè„šæœ¬çš„ä½ç½®åœ¨ã€‚sublimeDir/xxx/this.bat (å¤„äºå’Œsublime_text.exeæ‰€åœ¨ç›®å½•çš„å­ç›®å½•ä½ç½®)
+echo   1. È·±£bat½Å±¾µÄÎ»ÖÃÔÚ¡£sublimeDir/xxx/this.bat (´¦ÓÚºÍsublime_text.exeËùÔÚÄ¿Â¼µÄ×ÓÄ¿Â¼Î»ÖÃ)
 
-echo   2. ç¡®ä¿ Sublime Text çš„å¯æ‰§è¡Œæ–‡ä»¶åä¸º sublime_text.exeï¼›
+echo   2. È·±£ Sublime Text µÄ¿ÉÖ´ĞĞÎÄ¼şÃûÎª sublime_text.exe£»
 
-echo   3. è¯·å°†éœ€è¦ç»‘å®šçš„æ‰©å±•åä¿å­˜åˆ°åŒç›®å½• ext.txt æ–‡ä»¶ä¸­ï¼›ï¼ˆæ¯è¡Œä¸€ä¸ªæ‰©å±•åï¼‰
+echo   3. Çë½«ĞèÒª°ó¶¨µÄÀ©Õ¹Ãû±£´æµ½Í¬Ä¿Â¼ ext.txt ÎÄ¼şÖĞ£»£¨Ã¿ĞĞÒ»¸öÀ©Õ¹Ãû£©
 
-echo   4. è¯·ä»¥ç®¡ç†å‘˜èº«ä»½è¿è¡Œ
+echo   4. ÇëÒÔ¹ÜÀíÔ±Éí·İÔËĞĞ
 
 echo -----------------------------------------------------------------------
 
-Set /p y=å·²ç»é˜…è¯»æ“ä½œå‰æï¼Ÿï¼ˆè¾“å…¥yesï¼‰ï¼š
+Set /p y=ÒÑ¾­ÔÄ¶Á²Ù×÷Ç°Ìá£¿£¨ÊäÈëyes£©£º
 
 If not "%y%" == "yes" Goto read
 
@@ -30,17 +30,17 @@ echo -----------------------------------------------------------------------
 
 echo.
 
-echo   æ“ä½œåºå·ï¼š
+echo   ²Ù×÷ĞòºÅ£º
 
-echo   1: æ·»åŠ  Sublime Text åˆ°ç³»ç»Ÿå³é”®èœå•;
+echo   1: Ìí¼Ó Sublime Text µ½ÏµÍ³ÓÒ¼ü²Ëµ¥;
 
-echo   2: å¸è½½ Sublime Text å³é”®èœå•;
+echo   2: Ğ¶ÔØ Sublime Text ÓÒ¼ü²Ëµ¥;
 
-echo   3: æ³¨å†Œæ‰©å±•å; (æ‰©å±•ååˆ—è¡¨è¯·å­˜æ”¾è‡³åŒç›®å½•çš„ ext.txt æ–‡ä»¶ä¸­)
+echo   3: ×¢²áÀ©Õ¹Ãû; (À©Õ¹ÃûÁĞ±íÇë´æ·ÅÖÁÍ¬Ä¿Â¼µÄ ext.txt ÎÄ¼şÖĞ)
 
-echo   4: å¸è½½æ‰©å±•åï¼š
+echo   4: Ğ¶ÔØÀ©Õ¹Ãû£º
 
-echo   5: é€€å‡º;
+echo   5: ÍË³ö;
 
 echo.
 
@@ -50,7 +50,7 @@ echo -----------------------------------------------------------------------
 
 Set toolDir=%~dp0
 
-Set /p u=è¾“å…¥æ“ä½œåºå·å¹¶æŒ‰ Enter é”®ï¼š
+Set /p u=ÊäÈë²Ù×÷ĞòºÅ²¢°´ Enter ¼ü£º
 
 If "%u%" == "1" Goto regMenu
 
@@ -71,7 +71,7 @@ reg add "HKCR\*\shell\Sublime Text" /ve /d "Open With Sublime Text" /f
 
 If ERRORLEVEL 1 ( 
 
-    echo æ³¨å†Œå¤±è´¥ !!! 
+    echo ×¢²áÊ§°Ü !!! 
 
     goto begin
 
@@ -81,7 +81,7 @@ reg add "HKCR\*\shell\Sublime Text\command" /ve /d "\"%toolDir%..\sublime_text.e
 
 If ERRORLEVEL 1 ( 
 
-    echo æ³¨å†Œå¤±è´¥ !!! 
+    echo ×¢²áÊ§°Ü !!! 
 
     goto begin
 
@@ -89,7 +89,7 @@ If ERRORLEVEL 1 (
 
 echo.
 
-echo å·²æˆåŠŸæ³¨å†Œå³é”®èœå•
+echo ÒÑ³É¹¦×¢²áÓÒ¼ü²Ëµ¥
 
 echo.
 
@@ -103,7 +103,7 @@ reg delete "HKCR\*\shell\Sublime Text" /f
 
 echo.
 
-echo å·²æˆåŠŸå¸è½½å³é”®èœå•
+echo ÒÑ³É¹¦Ğ¶ÔØÓÒ¼ü²Ëµ¥
 
 echo.
 
@@ -113,11 +113,11 @@ Goto begin
 
 :sublimefile
 
-reg add "HKCR\sublimefile" /ve /d "æ–‡æœ¬æ–‡æ¡£" /f
+reg add "HKCR\sublimefile" /ve /d "ÎÄ±¾ÎÄµµ" /f
 
 If ERRORLEVEL 1 ( 
 
-    echo  å…³è”å¤±è´¥ !!! 
+    echo  ¹ØÁªÊ§°Ü !!! 
 
     goto begin
 
@@ -145,7 +145,7 @@ For /F "eol=;" %%e in (%toolDir%ext.txt) Do (
 
 echo.
 
-echo å·²æˆåŠŸæ³¨å†Œæ‰©å±•å
+echo ÒÑ³É¹¦×¢²áÀ©Õ¹Ãû
 
 echo.
 
@@ -159,7 +159,7 @@ reg delete "HKCR\sublimefile" /f
 
 If ERRORLEVEL 1 ( 
 
-    echo  è§£é™¤å…³è”å¤±è´¥ !!! 
+    echo  ½â³ı¹ØÁªÊ§°Ü !!! 
 
     goto begin
 
@@ -179,7 +179,7 @@ For /F "eol=;" %%e in (%toolDir%ext.txt) Do (
 
 echo.
 
-echo å·²æˆåŠŸå¸è½½æ‰©å±•å
+echo ÒÑ³É¹¦Ğ¶ÔØÀ©Õ¹Ãû
 
 echo.
 
